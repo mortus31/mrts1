@@ -1,0 +1,122 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Crazy Asf.", "DarkTheme")
+
+
+
+-- **If game.PlaceId == 2151251251 true**
+--MAIN
+
+
+--LOCALPLAYEAR
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+--CRAZY ASFF
+local Crazyasf = Window:NewTab("Crazy Asf.")
+local crazyseciton = Crazyasf:NewSection("ashienagagoimode")
+
+--MISC
+local Miscc = Window:NewTab("Misc")
+local MiscSection = Miscc:NewSection("Misc")
+
+
+local crazyseciton = Crazyasf:NewSection("Blox Fruits")
+crazyseciton:NewButton("Mukuro Hub ", "Fuck you", function ()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+	
+end)
+
+
+
+crazyseciton:NewButton("Hoho PAID ", "Hoho Hub Paid", function ()
+    getgenv().Key = "RRRYVcvOGawkZ2Z"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHubPre.lua"))()
+            
+end)
+
+
+local crazyseciton = Crazyasf:NewSection("Natural Disaster")
+crazyseciton:NewButton("Natural GUI", "GUI", function ()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/9ur98wh8fjkerbngo12ikontgg/fortnite/main/Natrual%20disasters90iuehfuierhg8e%20gheruigh%20eiugeuigeriugheruigheiugheuigheruighreuig%20euigeugheruiogeruigeuigh"))()
+
+    
+end)
+
+
+
+PlayerSection:NewSlider("Walk Speed", "Change your walk speed", 250, 32, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+
+PlayerSection:NewSlider("Jump Power", "Change your jump power", 250, 32, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+
+
+PlayerSection:NewToggle("Wall Hack", "See through walls", function(state)
+    if state then
+        getgenv().enabled = true --Toggle on/off
+        getgenv().filluseteamcolor = false --Toggle fill color using player team color on/off
+        getgenv().outlineuseteamcolor = false --Toggle outline color using player team color on/off
+        getgenv().fillcolor = Color3.new(0, 0, 0) --Change fill color, no need to edit if using team color
+        getgenv().outlinecolor = Color3.new(1, 1, 1) --Change outline color, no need to edit if using team color
+        getgenv().filltrans = 0 --Change fill transparency
+        getgenv().outlinetrans = 0 --Change outline transparency
+
+
+    else
+        getgenv().enabled = false
+    end
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zntly/highlight-esp/main/esp.lua"))()
+end)
+
+PlayerSection:NewButton("ESP Name", "Can see name through wall", function ()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/espname'))()
+
+
+
+	
+end)
+
+PlayerSection:NewButton("Full Bright", "Make the whole map have full brightness", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/bright'))()
+end)
+
+PlayerSection:NewButton("Infinite Jump", "Infinite jump lol", function()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+
+PlayerSection:NewButton("Fly", "Make your character fly", function ()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/fly'))()
+    
+
+end)
+
+
+MiscSection:NewButton("Infinite Yield", "Infinite Yield  commands", function ()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+
+	
+end)
+
+MiscSection:NewButton("Boost your FPS", "FPS BOOST", function ()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/fpsboost'))()
+    
+    
+        
+    end)
+
+
