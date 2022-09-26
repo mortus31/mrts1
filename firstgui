@@ -1,3 +1,8 @@
+
+local Key = "E"
+local Toggle = false
+
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Crazy Asf.", "DarkTheme")
 
@@ -12,13 +17,17 @@ local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("Player")
 
 --CRAZY ASFF
-local Crazyasf = Window:NewTab("Crazy Asf.")
-local crazyseciton = Crazyasf:NewSection("ashienagagoimode")
+local Crazyasf = Window:NewTab("Games")
+local crazyseciton = Crazyasf:NewSection("WALA PA REQUEST KAYO KUNG ANO LALAGAY HAHAHAHA")
 
 --MISC
 local Miscc = Window:NewTab("Misc")
 local MiscSection = Miscc:NewSection("Misc")
 
+
+PlayerSection:NewKeybind("Hide GUI", "Right Control to Hide", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
 
 local crazyseciton = Crazyasf:NewSection("Blox Fruits")
 crazyseciton:NewButton("Mukuro Hub ", "Fuck you", function ()
@@ -31,6 +40,12 @@ end)
 crazyseciton:NewButton("Hoho PAID ", "Hoho Hub Paid", function ()
     getgenv().Key = "RRRYVcvOGawkZ2Z"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHubPre.lua"))()
+            
+end)
+
+crazyseciton:NewButton("Hoho FREE", "Hoho Hub Free", function ()
+    getgenv().Key = "RRRYVcvOGawkZ2Z"
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
             
 end)
 
@@ -118,5 +133,4 @@ MiscSection:NewButton("Boost your FPS", "FPS BOOST", function ()
     
         
     end)
-
 
