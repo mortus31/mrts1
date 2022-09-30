@@ -16,6 +16,10 @@ local Window = Library.CreateLib("MOR GUI", "DarkTheme")
 local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("Player")
 
+--ESP
+local ESP = Window:NewTab("ESP")
+local ESPS = ESP:NewSection("ESP")
+
 --CRAZY ASFF
 local Crazyasf = Window:NewTab("Games")
 local crazyseciton = Crazyasf:NewSection("WALA PA REQUEST KAYO KUNG ANO LALAGAY HAHAHAHA")
@@ -23,6 +27,8 @@ local crazyseciton = Crazyasf:NewSection("WALA PA REQUEST KAYO KUNG ANO LALAGAY 
 --MISC
 local Miscc = Window:NewTab("Misc")
 local MiscSection = Miscc:NewSection("Misc")
+
+
 
 
 PlayerSection:NewKeybind("Hide GUI", "Right Control to Hide", Enum.KeyCode.RightControl, function()
@@ -74,7 +80,7 @@ PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
     end)
 
 
-PlayerSection:NewToggle("Wall Hack", "See through walls", function(state)
+ESPS:NewToggle("Wall Hack", "See through walls", function(state)
     if state then
         getgenv().enabled = true --Toggle on/off
         getgenv().filluseteamcolor = false --Toggle fill color using player team color on/off
@@ -91,7 +97,7 @@ PlayerSection:NewToggle("Wall Hack", "See through walls", function(state)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/zntly/highlight-esp/main/esp.lua"))()
 end)
 
-PlayerSection:NewButton("ESP Name", "Can see name through wall", function ()
+ESPS:NewButton("ESP Name", "Can see name through wall", function ()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/espname'))()
 
 
@@ -99,7 +105,7 @@ PlayerSection:NewButton("ESP Name", "Can see name through wall", function ()
 	
 end)
 
-PlayerSection:NewButton("Full Bright", "Make the whole map have full brightness", function()
+ESPS:NewButton("Full Bright", "Make the whole map have full brightness", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/bright'))()
 end)
 
@@ -130,8 +136,16 @@ end)
 
 MiscSection:NewButton("Boost your FPS", "FPS BOOST", function ()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/fpsboost'))()
+
+
+end)
+
+MiscSection:NewButton("Boost your FPS", "FPS BOOST", function ()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/fpsboost'))()
+
+
+end)
     
     
         
-    end)
-
+    
