@@ -123,6 +123,9 @@ end)
 MiscSection:NewButton("Infinite Yield", "Infinite Yield  commands", function ()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 
+MiscSection:NewButotn("Anti AFK", "Anti Disconnect", function ()
+loading(game:HttpGet('https://pastebin.com/raw/bwP4bmed'))()
+
 
 	
 end)
