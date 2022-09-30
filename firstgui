@@ -114,7 +114,7 @@ end)
 
 
 PlayerSection:NewButton("Fly", "Make your character fly", function ()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/fly'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mortus31/mrts1/main/fly%20v3'))()
     
 
 end)
